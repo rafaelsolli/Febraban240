@@ -1,6 +1,6 @@
 ﻿namespace Febraban240
 {
-    abstract class Campo
+    public abstract class Campo
     {
         public int PosicaoInicial { get; set; }
         public int PosicaoFinal { get; set; }

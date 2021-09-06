@@ -41,46 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Geral\Campo\CampoAlfanumerico.cs" />
-    <Compile Include="Geral\Campo\CampoNumerico.cs" />
-    <Compile Include="Detalhe\RegistroDetalhe.cs" />
-    <Compile Include="Detalhe\RegistroDetalheN1.cs" />
-    <Compile Include="Detalhe\RegistroDetalheN2.cs" />
-    <Compile Include="Detalhe\RegistroDetalheN3.cs" />
-    <Compile Include="Detalhe\RegistroDetalheN4.cs" />
-    <Compile Include="Detalhe\RegistroDetalheN5.cs" />
-    <Compile Include="Detalhe\RegistroDetalheN6.cs" />
-    <Compile Include="Detalhe\RegistroDetalheN7.cs" />
-    <Compile Include="Detalhe\RegistroDetalheN8.cs" />
-    <Compile Include="Detalhe\RegistroDetalheA.cs" />
-    <Compile Include="Detalhe\RegistroDetalheB.cs" />
-    <Compile Include="Detalhe\RegistroDetalheC.cs" />
-    <Compile Include="Detalhe\RegistroDetalheJ.cs" />
-    <Compile Include="Detalhe\RegistroDetalheJ52.cs" />
-    <Compile Include="Detalhe\RegistroDetalheJ52Pix.cs" />
-    <Compile Include="Detalhe\RegistroDetalheN.cs" />
-    <Compile Include="Detalhe\RegistroDetalheO.cs" />
-    <Compile Include="Detalhe\RegistroDetalheZ.cs" />
-    <Compile Include="Detalhe\RegistroDetalheW.cs" />
-    <Compile Include="Detalhe\RegistroDetalheW1.cs" />
-    <Compile Include="Geral\Arquivo.cs" />
-    <Compile Include="Geral\Campo\Campo.cs" />
-    <Compile Include="Header\RegistroHeader.cs" />
-    <Compile Include="Header\RegistroHeaderArquivo.cs" />
-    <Compile Include="Header\RegistroHeaderLote.cs" />
-    <Compile Include="Header\RegistroHeaderLote012.cs" />
-    <Compile Include="Trailer\RegistroTrailer.cs" />
-    <Compile Include="Trailer\RegistroTrailerLote.cs" />
-    <Compile Include="Trailer\RegistroTrailerLote012.cs" />
-    <Compile Include="Trailer\RegistroTrailerLote040.cs" />
-    <Compile Include="Header\RegistroHeaderLote046.cs" />
-    <Compile Include="Geral\Lote.cs" />
-    <Compile Include="Header\RegistroHeaderLote040.cs" />
+    <Compile Include="Geral\CampoAlfanumerico.cs" />
+    <Compile Include="Geral\CampoNumerico.cs" />
+    <Compile Include="Geral\Campo.cs" />
+    <Compile Include="Geral\HeaderArquivo.cs" />
+    <Compile Include="Geral\HeaderLote046.cs" />
+    <Compile Include="Geral\SegmentoA.cs" />
+    <Compile Include="Geral\SegmentoB.cs" />
+    <Compile Include="Geral\TrailerArquivo.cs" />
+    <Compile Include="Geral\TrailerLote046.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Geral\Registro.cs" />
-    <Compile Include="Trailer\RegistroTrailerArquivo.cs" />
-    <Compile Include="Trailer\RegistroTrailerLote046.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Detalhe\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

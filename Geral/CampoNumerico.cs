@@ -1,11 +1,20 @@
 ﻿namespace Febraban240
 {
-    class CampoNumerico : Campo
+    public class CampoNumerico : Campo
     {
         public int NumeroCasasDecimais { get; set; }
 
         public CampoNumerico(int posicaoInicial, int posicaoFinal, int numeroCasasDecimais, string descricao)
-                             : base(posicaoInicial, posicaoFinal, descricao) { NumeroCasasDecimais = numeroCasasDecimais; }
+                             : base(posicaoInicial, posicaoFinal, descricao)
+        {
+            NumeroCasasDecimais = numeroCasasDecimais;
+        }
+
+        public CampoNumerico(int posicaoInicial, int posicaoFinal, int numeroCasasDecimais, string descricao, string valor)
+                             : this(posicaoInicial, posicaoFinal, numeroCasasDecimais, descricao)
+        {
+            Valor = valor;
+        }
 
         protected override int CalcularNumeroDigitos() => PosicaoFinal - PosicaoInicial - NumeroCasasDecimais + 1;
 

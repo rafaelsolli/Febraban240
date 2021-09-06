@@ -3,10 +3,18 @@ using System.Text;
 
 namespace Febraban240
 {
-    class CampoAlfanumerico : Campo
+    public class CampoAlfanumerico : Campo
     {
         public CampoAlfanumerico(int posicaoInicial, int posicaoFinal, string descricao)
-                                 : base(posicaoInicial, posicaoFinal, descricao) { }
+                                 : base(posicaoInicial, posicaoFinal, descricao)
+        {
+        }
+
+        public CampoAlfanumerico(int posicaoInicial, int posicaoFinal, string descricao, string valor)
+                                 : this(posicaoInicial, posicaoFinal, descricao)
+        {
+            Valor = valor;
+        }
 
         protected override int CalcularNumeroDigitos() => PosicaoFinal - PosicaoInicial + 1;
 

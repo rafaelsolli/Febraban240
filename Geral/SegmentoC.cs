@@ -1,6 +1,6 @@
 ﻿namespace Febraban240
 {
-    class SegmentoC
+    public class SegmentoC
     {
         public GrupoControle Controle = new GrupoControle();
         public class GrupoControle
